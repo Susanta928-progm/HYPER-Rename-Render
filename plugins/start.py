@@ -20,17 +20,17 @@ async def start(client, message):
         await db.add_user(user.id)             
     txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton(" Developer ", url='https://t.me/anjel_neha')
+        InlineKeyboardButton(" Developer ", url='https://t.me/THEHYPER_ACX')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/VJ_Bots'),
-        InlineKeyboardButton(' Support', url='https://t.me/vj_bot_disscussion')
+        InlineKeyboardButton(' Updates', url='https://t.me/ACX_NETWORK'),
+        InlineKeyboardButton(' Support', url='https://t.me/ACX_DISCUSSION')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
         InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/VJ_Bots')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/@Tech_VJ')
+        InlineKeyboardButton("❤️ Follow Us In Instagram ❤️", url='https://www.instagram.com/unknown_uzumaki_07_?igsh=b3M2a2FucnB5Nzln')
         ]
         ])
     if START_PIC:
@@ -76,15 +76,15 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton(" Developer ", url='https://t.me/anjel_neha')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/VJ_Bots'),
-        InlineKeyboardButton(' Support', url='https://t.me/vj_bot_disscussion')
+        InlineKeyboardButton(' Updates', url='https://t.me/ACX_NETWORK'),
+        InlineKeyboardButton(' Support', url='https://t.me/ACX_DISCUSSION')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
         InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/vj_bots')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/@Tech_VJ')
+        InlineKeyboardButton("❤️ Follow Us In Instagram ❤️", url='https://www.instagram.com/unknown_uzumaki_07_?igsh=b3M2a2FucnB5Nzln')
         ]
         ]
                 )
@@ -105,7 +105,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.ABOUT_TXT.format(client.mention),
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/vj_bots")
+                InlineKeyboardButton(" Join our Movie Group ", url="https://t.me/ACX_MOVIE_GROUP")
                ],[
                InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
@@ -116,7 +116,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.DEV_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/vj_bots")
+                InlineKeyboardButton(" Join our Movie Group ", url="https://t.me/ACX_MOVIE_GROUP")
                ],[
                InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
