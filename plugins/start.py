@@ -18,9 +18,9 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
+    txt=f"👋 Hello Developer {user.mention} 🥀\n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton(" Developer ", url='https://t.me/THEHYPER_ACX')
+        InlineKeyboardButton(" Developer ✉️", url='https://t.me/THEHYPER_ACX')
         ],[
         InlineKeyboardButton(' Updates', url='https://t.me/ACX_NETWORK'),
         InlineKeyboardButton(' Support', url='https://t.me/ACX_DISCUSSION')
@@ -28,7 +28,7 @@ async def start(client, message):
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/VJ_Bots')
+        InlineKeyboardButton(" Join Our Movie Group !!", url='https://t.me/ACX_MOVIE_GROUP')
         ],[
         InlineKeyboardButton("❤️ Follow Us In Instagram ❤️", url='https://www.instagram.com/unknown_uzumaki_07_?igsh=b3M2a2FucnB5Nzln')
         ]
@@ -74,7 +74,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton(" Developer ", url='https://t.me/anjel_neha')
+        InlineKeyboardButton(" Developer ✉️ ", url='https://t.me/THEHYPER_ACX')
         ],[
         InlineKeyboardButton(' Updates', url='https://t.me/ACX_NETWORK'),
         InlineKeyboardButton(' Support', url='https://t.me/ACX_DISCUSSION')
@@ -82,8 +82,8 @@ async def cb_handler(client, query: CallbackQuery):
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/vj_bots')
-        ],[
+        InlineKeyboardButton(" Join Our Movie Group !!", url='https://t.me/ACX_MOVIE_GROUP')
+        ],[ 
         InlineKeyboardButton("❤️ Follow Us In Instagram ❤️", url='https://www.instagram.com/unknown_uzumaki_07_?igsh=b3M2a2FucnB5Nzln')
         ]
         ]
@@ -93,7 +93,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/vj_bots")
+               InlineKeyboardButton(" Join our Movie Group ", url="https://t.me/ACX_MOVIE_GROUP")
                ],[
                InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
